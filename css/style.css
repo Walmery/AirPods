@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: geometric-231;
+}
+
+@font-face {
+    font-family: geometric-231;
+    src: url(../fonts/geometric-231.otf);
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #becbe2;
+    font-size: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header-top{
+    display: flex;
+    max-width: 1500px;
+    height: 750px;
+    margin: 100px auto;
+    border-radius: 30px;
+    background-color: #ECEEF8;
+    box-shadow: 0px 0px 50px 20px #ECEEF8;
+}
+
+.menu{
+    width: 200px;
+    height: 100%;
+    padding: 20px;
+}
+
+.logo  svg{
+    width: 90px;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.menu-link{
+    display: block;
+    width: 125px;
+    margin: 50px auto;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.menu-link-cls{
+    cursor: pointer;
+    margin: 40px 0;
+    color: #b4b4b4;
+}
+
+.search{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+.content-main{
+    display: flex;
+    box-shadow: -10px 15px 20px 10px #D8D8D8;
+    height: 700px;
+    overflow: hidden;
+}
+
+.top-content{
+    width: 1100px;
+    height: 700px;
+    background-size: cover;
+    border-radius: 0 0 0px 30px;
+    z-index: 999;
+}
+
+.top-content h1{
+    font-weight: bold;
+    font-size: 200px;
+    letter-spacing: 10px;
+    color: rgba(0, 0, 0, 0.055);
+    z-index: -1;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.slider-content{
+    width: 200px;
+    height: 700px;
+    z-index: 7;
+    border-radius: 0px 30px 0px 0px;
+}
+
+.content-txt{
+    margin-left: 100px;
+    margin-top: -150px;
+    z-index: 99;
+}
+
+.content-txt span{
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    color:rgba(0, 0, 0, 0.26)
+}
+
+.content-txt p{
+    margin-top: 20px;
+    width: 400px;
+    color:rgba(0, 0, 0, 0.185)
+}
+
+.btn-main{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 4px 10px;
+    width: 300px;
+    height: 30px;
+    background-color: #10214136;
+    border-radius: 30px;
+    margin-left: 100px;
+    margin-top: 50px;
+    color:rgba(255, 255, 255, 0.603)
+}
+
+.link{
+    position: absolute;
+    width: 1093px;
+    height: 700px;
+    margin-left: -1100px;
+    margin-top: -25px;
+    transition: .5s;
+}
+
+.photo-link-1{
+    background: url(../img/Bitmap.png)center no-repeat;
+    background-size: cover;
+    opacity: 0;
+}
+
+.photo-link-2{
+    background: url(../img/checked2.png)center no-repeat;
+    background-size: cover;
+    opacity: 0;
+}
+
+.photo-link-3{
+    background: url(../img/checked3.png)center no-repeat;
+    background-size: cover;
+    opacity: 0;
+}
+
+.photo-link-4{
+    background: url(../img/checked4.png) no-repeat;
+    background-size: cover;
+    opacity: 0;
+}
+
+.photo-link-5{
+    background: url(../img/checked5.png)center no-repeat;
+    background-size: cover;
+    opacity: 0;
+}
+
+.active{
+    position: absolute;
+    width: 207px;
+    height: 140px;
+    margin-left: -92px;
+    transition: .2s;
+    overflow: hidden;
+}
+
+.photo-active-1{
+    background: url(../img/Bitmap.png)center no-repeat;
+    background-size: cover;
+    border-radius: 0px 10px 0px 0px;
+}
+.photo-active-2{
+    background: url(../img/checked2.png)center no-repeat;
+    background-size: cover;
+    margin-top: 140px;
+}
+
+.photo-active-3{
+    background: url(../img/checked3.png)center no-repeat;
+    background-size: cover;
+    margin-top: 280px;
+}
+
+.photo-active-4{
+    background: url(../img/checked4.png)center no-repeat;
+    background-size: cover;
+    margin-top: 420px;
+}
+
+.photo-active-5{
+    background: url(../img/checked5.png)center no-repeat;
+    background-size: cover;
+    margin-top: 560px;
+}
+
+#active-1:checked ~ .photo-link-1{
+    opacity: 1;
+}
+
+#active-2:checked ~ .photo-link-2{
+    opacity: 1;
+}
+
+#active-3:checked ~ .photo-link-3{
+    opacity: 1;
+}
+
+#active-4:checked ~ .photo-link-4{
+    opacity: 1;
+}
+
+#active-5:checked ~ .photo-link-5{
+    opacity: 1;
+}
+
+.active:hover{
+    position: absolute;
+    width: 210px;
+    height: 150px;
+    margin-left: -92px;
+    overflow: hidden;
+}
